@@ -5,7 +5,7 @@
 }
 
 h1 {
-   font-family: 'Edu TAS Beginner', sans-serif;
+  font-family: "Edu TAS Beginner", sans-serif;
   font-size: 4.5rem;
   font-weight: bold;
 }
@@ -16,9 +16,16 @@ h1 {
 }
 
 .container {
-    max-width: 1000px;
+  max-width: 1000px;
 }
 
 .card p {
-    font-family: ‘Sometype Mono’, ‘monospace’;
+  font-family: ‘Sometype Mono’, ‘monospace’;
+}
+
+.pin {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
