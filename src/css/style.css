@@ -15,7 +15,7 @@ h1 {
   background-size: cover;
 }
 
-.container {
+.container{
   max-width: 1000px;
 }
 
@@ -30,4 +30,7 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-
+.container-big {
+    max-width: 1600px;
+    background: url('../../assets/img/cork.png');
+}
