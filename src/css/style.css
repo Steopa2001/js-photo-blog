@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+   font-family: 'Edu TAS Beginner', sans-serif;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.header-title {
+  background: url("../../assets/img/wall.png");
+  background-size: cover;
+}
