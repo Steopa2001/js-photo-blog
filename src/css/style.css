@@ -15,12 +15,13 @@ h1 {
   background-size: cover;
 }
 
-.container{
+.container {
   max-width: 1000px;
 }
 
 .card p {
   font-family: ‘Sometype Mono’, ‘monospace’;
+  font-size: 15px;
 }
 
 .pin {
@@ -31,14 +32,13 @@ h1 {
 }
 
 .container-big {
-    max-width: 1600px;
-    background: url('../../assets/img/cork.png');
+  max-width: 1600px;
+  background: url("../../assets/img/cork.png");
 }
-
 
 /* RENDO TITOLO PIU' PICCOLO QUANDO RAGGIUNGE LE DIMENSIONI DELLO SMATPHONE */
 @media (max-width: 768px) {
- h1 {
-    font-size: 2rem;
+  h1 {
+    font-size: 3rem;
   }
 }
