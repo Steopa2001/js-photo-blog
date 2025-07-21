@@ -36,6 +36,10 @@ h1 {
   background: url("../../assets/img/cork.png");
 }
 
+.data {
+  font-family: ‘Sometype Mono’, ‘monospace’;
+}
+
 /* RENDO TITOLO PIU' PICCOLO QUANDO RAGGIUNGE LE DIMENSIONI DELLO SMATPHONE */
 @media (max-width: 768px) {
   h1 {

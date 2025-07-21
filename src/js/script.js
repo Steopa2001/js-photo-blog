@@ -28,7 +28,7 @@ function generaFoto() {
               <img class="pin" src="./assets/img/pin.svg" style="width: 30px" alt="pin" />
               <div class="card-body">
                 <p class="card-text"><em>${foto.title}</em></p>
-                <small class="text-muted">${foto.date}</small>
+                <small class="text-muted data">${foto.date}</small>
               </div>
             </div>
           </div>
