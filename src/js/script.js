@@ -18,7 +18,8 @@ function generaFoto() {
 
     // Ciclo classico for per scorrere l'array delle foto
     for (let i = 0; i < fotoArray.length; i++) {
-      const foto = fotoArray[i]; // prendo la singola foto
+      // prendo la singola foto
+      const foto = fotoArray[i];
 
       // Aggiungo al contenitore fotoList una struttura HTML per ogni foto:
       fotoList.innerHTML += `
@@ -28,7 +29,7 @@ function generaFoto() {
               <img class="pin" src="./assets/img/pin.svg" style="width: 30px" alt="pin" />
               <div class="card-body">
                 <p class="card-text"><em>${foto.title}</em></p>
-                <small class="text-muted data">${foto.date}</small>
+                <p class="data">${foto.date}</p>
               </div>
             </div>
           </div>
