@@ -27,3 +27,6 @@ function generaFoto() {
     });
   });
 };
+
+// Eseguo la funzione al caricamento della pagina
+generaFoto();
