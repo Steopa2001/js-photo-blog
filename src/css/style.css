@@ -14,3 +14,11 @@ h1 {
   background: url("../../assets/img/wall.png");
   background-size: cover;
 }
+
+.container {
+    max-width: 1000px;
+}
+
+.card p {
+    font-family: ‘Sometype Mono’, ‘monospace’;
+}
