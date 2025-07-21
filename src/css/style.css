@@ -34,3 +34,11 @@ h1 {
     max-width: 1600px;
     background: url('../../assets/img/cork.png');
 }
+
+
+/* RENDO TITOLO PIU' PICCOLO QUANDO RAGGIUNGE LE DIMENSIONI DELLO SMATPHONE */
+@media (max-width: 768px) {
+ h1 {
+    font-size: 2rem;
+  }
+}
