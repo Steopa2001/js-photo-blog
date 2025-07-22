@@ -41,14 +41,18 @@ function generaFoto() {
 // Eseguo la funzione al caricamento della pagina
 generaFoto();
 
-
 // OVERLAY:
 // Recupero dal DOM l'elemento overlay tramite il suo id "overlay"
 const overlay = document.getElementById("overlay");
 // All'interno dell'overlay cerco il bottone di chiusura con la classe "close-btn"
 const closeBtn = overlay.querySelector(".close-btn");
 
- // Genero funzione per mostrare l'overlay impostando display-block
- function mostraOverlay () {
-  overlay.style.display = 'block';
- };
+// Genero funzione per mostrare l'overlay impostando display-block
+function mostraOverlay() {
+  overlay.style.display = "block";
+}
+
+// Genero funzione per nascondere l'overlay impostando display-none
+function nascondoOverlay() {
+  overlay.style.display = "none";
+}
