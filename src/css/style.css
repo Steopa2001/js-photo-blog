@@ -47,8 +47,20 @@ h1 {
   }
 }
 
-
-
-
-
-
+/* OVERLAY  */
+#overlay {
+  /* rimane sempre visibile anche se scorri la pagina */
+  position: fixed;
+  /* Posiziona l’elemento all’inizio (in alto) della finestra */
+  top: 0;
+  /* Posiziona l’elemento all’inizio (a sinistra) della finestra */
+  left: 0;
+  /* Larghezza dell’elemento: 100% della larghezza della finestra viewport */
+  width: 100vw;
+  /* Altezza dell’elemento: 100% dell’altezza della finestra viewport */
+  height: 100vh;
+  /* Colore di sfondo nero con trasparenza (opacity 80%) per fare un overlay scuro */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Livello di sovrapposizione: 1, significa che sarà sopra elementi con z-index più basso o senza z-index */
+  z-index: 1;
+}
