@@ -25,7 +25,7 @@ function generaFoto() {
       fotoList.innerHTML += `
           <div class="col-10 col-md-5 col-lg-4">
             <div class="card position-relative h-100" style="border-radius: 0">
-              <img src="${foto.url}" class="card-img-top p-3" style="border-radius: 0" alt="${foto.title}" />
+              <img src="${foto.url}" class="card-image p-3" style="border-radius: 0" alt="${foto.title}" />
               <img class="pin" src="./assets/img/pin.svg" style="width: 30px" alt="pin" />
               <div class="card-body">
                 <p class="card-text"><em>${foto.title}</em></p>
@@ -35,6 +35,20 @@ function generaFoto() {
           </div>
         `;
     }
+
+    // Quando clicco sul bottone di chiusura, chiamo la funzione nascondoOverlay per nascondere l'overlay
+closeBtn.addEventListener("click", nascondoOverlay);
+
+// Seleziono tutte le immagini cliccabili 
+const immagini = document.querySelectorAll(".card-image");
+
+// Per ogni immagine aggiungo il click per mostrare l’overlay
+immagini.forEach((img) => {
+  img.addEventListener("click", function () {
+    mostraOverlay(); 
+  });
+});
+
   });
 }
 
@@ -47,12 +61,13 @@ const overlay = document.getElementById("overlay");
 // All'interno dell'overlay cerco il bottone di chiusura con la classe "close-btn"
 const closeBtn = overlay.querySelector(".close-btn");
 
-// Genero funzione per mostrare l'overlay impostando display-block
+// Rimuovo la classe "d-none" dall'elemento overlay così l'overlay torna visibile
 function mostraOverlay() {
-  overlay.style.display = "block";
+  overlay.classList.remove("d-none");
 }
 
-// Genero funzione per nascondere l'overlay impostando display-none
+// Aggiungo la classe "d-none" all'elemento overlay
 function nascondoOverlay() {
-  overlay.style.display = "none";
+  overlay.classList.add("d-none");
 }
+
