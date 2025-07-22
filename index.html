@@ -17,11 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <link
       rel="icon"
       href="./assets/img/sun-icon-set-clipart-design-illustration-free-png.webp"
@@ -30,6 +30,22 @@
     <title>Estate 2024</title>
   </head>
   <body>
+
+    <!-- OVERLAY -->
+<div id="overlay" class="overlay d-flex justify-content-center align-items-center">
+  <div class="overlay-content position-relative text-center">
+    <img
+      src="./assets/img/bluefin-bay-summer-600x600.jpg.webp"
+      alt="Overlay Image"
+      class="overlay-image img-fluid"
+    />
+    <button class="close-btn btn btn-light position-absolute top-0 end-0 m-2">
+      ✖
+    </button>
+  </div>
+</div>
+
+
     <!-- HEADER -->
     <header>
       <div class="header-title p-3">
@@ -42,11 +58,14 @@
       <!-- CONTENITORE, RIGA, COLONNA -->
       <div class="container-big">
         <div class="container">
-
-            <div class="row justify-content-center g-3 pt-4 pb-3" id="foto-list"></div>
-           
+          <div
+            class="row justify-content-center g-3 pt-4 pb-3"
+            id="foto-list"
+          ></div>
         </div>
       </div>
+
+
     </main>
 
     <script src="./src/js/script.js"></script>
