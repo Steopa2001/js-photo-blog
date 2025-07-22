@@ -66,9 +66,9 @@ function generaFoto() {
         // Seleziono l'immagine all'interno dell'overlay
         const overlayImage = overlay.querySelector(".overlay-image");
 
-        // Aggiorno la sorgente (src) e il testo alternativo (alt) dell'immagine overlay con quelli dell'immagine cliccata
+        // Aggiorno la sorgente (src) dell'immagine overlay con quella dell'immagine cliccata
         overlayImage.src = this.src;
-        overlayImage.alt = this.alt;
+    
         mostraOverlay();
       });
     });
