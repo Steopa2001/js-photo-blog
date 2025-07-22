@@ -91,5 +91,10 @@ h1 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
 }
 
+/* Nascondo il pin quando la card è in hover */
+.card:hover .pin {
+  display: none;
+}
+
 
 
