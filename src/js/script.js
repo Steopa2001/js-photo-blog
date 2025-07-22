@@ -48,3 +48,7 @@ const overlay = document.getElementById("overlay");
 // All'interno dell'overlay cerco il bottone di chiusura con la classe "close-btn"
 const closeBtn = overlay.querySelector(".close-btn");
 
+ // Genero funzione per mostrare l'overlay impostando display-block
+ function mostraOverlay () {
+  overlay.style.display = 'block';
+ };
