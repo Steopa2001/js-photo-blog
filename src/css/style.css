@@ -69,4 +69,12 @@ h1 {
   cursor: pointer;
 }
 
+/* 
+  Imposto un limite massimo alla larghezza e all'altezza dell'immagine per evitare che superi le dimensioni desiderate (600x600 pixel).
+*/
+.overlay-image {
+  max-width: 600px;
+  max-height: 600px;
+}
+
 

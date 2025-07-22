@@ -14,7 +14,6 @@ function nascondoOverlay() {
   overlay.classList.add("d-none");
 }
 
-
 // Recupero il contenitore delle card dal DOM
 const fotoList = document.getElementById("foto-list");
 
@@ -61,7 +60,15 @@ function generaFoto() {
 
     // Per ogni immagine aggiungo il click per mostrare l’overlay
     immagini.forEach((img) => {
-      img.addEventListener("click", function () {
+      img.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        // Seleziono l'immagine all'interno dell'overlay
+        const overlayImage = overlay.querySelector(".overlay-image");
+
+        // Aggiorno la sorgente (src) e il testo alternativo (alt) dell'immagine overlay con quelli dell'immagine cliccata
+        overlayImage.src = this.src;
+        overlayImage.alt = this.alt;
         mostraOverlay();
       });
     });
@@ -70,5 +77,3 @@ function generaFoto() {
 
 // Eseguo la funzione al caricamento della pagina
 generaFoto();
-
-
