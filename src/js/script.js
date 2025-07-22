@@ -40,3 +40,11 @@ function generaFoto() {
 
 // Eseguo la funzione al caricamento della pagina
 generaFoto();
+
+
+// OVERLAY:
+// Recupero dal DOM l'elemento overlay tramite il suo id "overlay"
+const overlay = document.getElementById("overlay");
+// All'interno dell'overlay cerco il bottone di chiusura con la classe "close-btn"
+const closeBtn = overlay.querySelector(".close-btn");
+
