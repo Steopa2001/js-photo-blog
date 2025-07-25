@@ -41,7 +41,7 @@ function generaFoto() {
       fotoList.innerHTML += `
           <div class="col-10 col-md-5 col-lg-4">
             <div class="card position-relative h-100" style="border-radius: 0">
-              <img src="${foto.url}" class="card-image p-3" style="border-radius: 0" alt="${foto.title}" />
+              <img src="${foto.url}" class="card-image p-3" style="border-radius: 0" alt="" />
               <img class="pin" src="./assets/img/pin.svg" style="width: 30px" alt="pin" />
               <div class="card-body">
                 <p class="card-text"><em>${foto.title}</em></p>
@@ -61,14 +61,17 @@ function generaFoto() {
     // Per ogni immagine aggiungo il click per mostrare l’overlay
     immagini.forEach((img) => {
       img.addEventListener("click", function (event) {
+        //blocco il comportamento di default del browser
         event.preventDefault();
 
         // Seleziono l'immagine all'interno dell'overlay
         const overlayImage = overlay.querySelector(".overlay-image");
 
         // Aggiorno la sorgente (src) dell'immagine overlay con quella dell'immagine cliccata
+        //Prendo l'immagine cliccata (this.src) e la metto dentro l'immagine grande nell'overlay (overlayImage.src) per farla vedere ingrandita.
         overlayImage.src = this.src;
     
+        //Chiamo la funzione mostraOverlay() per farla vedere in grande.
         mostraOverlay();
       });
     });

@@ -51,10 +51,6 @@ h1 {
 #overlay {
   /* rimane sempre visibile anche se scorri la pagina */
   position: fixed;
-  /* Posiziona l’elemento all’inizio (in alto) della finestra */
-  top: 0;
-  /* Posiziona l’elemento all’inizio (a sinistra) della finestra */
-  left: 0;
   /* Larghezza dell’elemento: 100% della larghezza della finestra viewport */
   width: 100vw;
   /* Altezza dell’elemento: 100% dell’altezza della finestra viewport */
@@ -81,14 +77,15 @@ h1 {
 /* BONUS */
 /* Imposto una transizione fluida e cursore pointer sulla card */
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
 
 /* Imposto uno zoom, una rotazione e un'ombra al passaggio del mouse */
 .card:hover {
+  /* Ingrandisco l'elemento e effettuo una rotazione di 10 gradi */
   transform: scale(1.1) rotate(10deg);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 1);
 }
 
 /* Nascondo il pin quando la card è in hover */
